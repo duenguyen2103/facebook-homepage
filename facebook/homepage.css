@@ -1,0 +1,110 @@
+body{
+    
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1D5087;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header .header-form{
+    margin: auto;
+}
+#login {
+    display: flex;
+   flex-direction: row;
+   color: white;
+   
+
+}
+header .login-button {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.main-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #E1EDFA;
+}
+.main-body .left-half{
+    flex: 1;
+}
+.main-body .right-half{
+    flex: 1;
+}
+.main-body .right-half .account-information{
+    display: flex;
+    flex-direction: column;
+    flex: 1 100%;
+    align-items: stretch;
+}
+.main-body .right-half .account-information .fullname{
+    display: flex;
+    flex-direction: row;
+    padding:0.1rem;
+}
+.main-body .right-half .account-information .email-or-phone{
+    display: flex;
+    flex-direction: row;
+    padding:0.1rem;
+}
+.main-body .right-half .account-information .password{
+    display: flex;
+    flex-direction: row;
+    padding:0.1rem;
+}
+.main-body .right-half .account-information .full-width * {
+    width: 100%;
+}
+.main-body .right-half .birthday-input {
+    display: flex;
+    flex-direction: row;
+   
+
+}
+.main-body .right-half .birthday-input input {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.main-body .right-half .birthday-input p {
+    padding-left: 1rem;
+}
+footer {
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer .upper-footer{
+    display: flex;
+    flex-direction: row;
+
+}
+footer .upper-footer .add-button {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+footer .upper-footer .language{
+    display: flex;
+    flex-direction: row;
+
+}
+footer .upper-footer .language p{
+    padding-right: 1rem;
+}
+footer .lower-footer{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+footer .lower-footer p{
+    padding-right: 1rem;
+}
