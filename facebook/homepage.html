@@ -21,7 +21,7 @@
                     <p class="small-text"id="forgotpassword">Forgot Password?</p>
                 </div>
                 <div class="login-button input">
-                    <button>login</button>
+                    <button>Log In</button>
                 </div>
             </form>
         </div>
@@ -30,56 +30,66 @@
             <div class="left-half">
                 <h2 class="big-slogan">Connect with friends and the<br> world around you on Facebook</h2>
                 <div  class="small-slogan">
-                    <p><img src="./icon/paper.png"><strong>See Photo and Updates </strong> from friends in news feed</p>
+                    <p><img src="./icon/paper.png"><strong>See Photo and Updates</strong> from friends in news feed</p>
                 
                 
-                    <p><img src="./icon/star.png"><strong>Share what's new </strong> in your life on your timeline</p>
+                    <p><img src="./icon/star.png"><strong>Share what's new</strong> in your life on your timeline</p>
                 
                 
-                    <p><img src="./icon/triangle.png"><strong>Find more </strong> of what you're looking for with Facebook Search</p>
+                    <p><img src="./icon/triangle.png"><strong>Find more</strong> of what you're looking for with Facebook Search</p>
                 </div>
             </div>
             <div class="right-half">
                 <form>
-                    <h2>Sign Up</h2>
-                    <p>It's free and always will be</p>
+                    <div  class="signup-title">
+                            <h2>Sign Up</h2>
+                            <p>It's free and always will be</p>
+                    </div>
                     <div class="account-information">
                             <div class="fullname full-width">
-                                    <input placeholder="First name">
-                                    <input placeholder="Last name">
+                                    <input id="firstname" type="text" placeholder="First name">
+                                    <input id="lastname" type="text" placeholder="Last name">
                             </div>
                             <div class="email-or-phone full-width">
-                                    <input placeholder="Email or Phone number">
+                                    <input type="text" placeholder="Email or Phone number">
                             </div>
                             <div class="password full-width">
-                                    <input placeholder="New Password">
+                                    <input type="text" placeholder="New Password">
                             </div>
                     </div>
                     <div>
                         <div>
-                            <p>Birthday</p>
+                            <p class="birthday-title">Birthday</p>
                             <div class="birthday-input">
-                                    <input type=date>
+                                    <select>
+                                        <option>Month</option>
+                                    </select>
+                                    <select>
+                                        <option>Day</option>
+                                    </select>
+                                    <select>
+                                        <option>Year</option>
+                                    </select>
                                     <p>
-                                        Why do I need to provide my birthday?
+                                        Why do I need to provide my <br> birthday?
                                     </p>
                             </div>
                             
 
                         </div>
                         <div>
-                            <input type=radio> Male
                             <input type=radio> Female
+                            <input type=radio> Male
                         </div>
                     </div>
-                    <p>
-                            By clicking Sign Up, you agree to our Terms, Data Popcy and Cookies Popcy. You may receive SMS Notifications from us and can opt out any time.
+                    <p class="agreement">
+                            By clicking Sign Up, you agree to our <strong>Terms</strong>, <strong>Data Policy</strong>  and <strong>Cookies Policy</strong>. You may receive SMS Notifications from us and can opt out any time.
                     </p>
-                    <div>
+                    <div class="signup-button">
                         <button>Sign Up</button>
                     </div>
                     <hr>
-                    <p>Create A Page for celebrity, band or business.</p>
+                    <p class="create-page"><strong>Create A Page</strong> for celebrity, band or business.</p>
                     
                 </form>
             </div>
@@ -133,6 +143,9 @@
                     <p>help</p>
 
         
+        </div>
+        <div class="copyright">
+            <p>Facebook © 2019</p>
         </div>
 
     </footer>

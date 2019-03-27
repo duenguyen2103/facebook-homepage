@@ -1,12 +1,13 @@
 body{
     font-family: Verdana, Geneva, sans-serif;
+    color:#333333;
     
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1D5087;
+    background-color: #3a5998;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -22,8 +23,8 @@ header .header-form{
 }
 #login {
     display: flex;
-   flex-direction: row;
-   color: white;   
+    flex-direction: row;
+    color: white;   
 
 }
 header .small-text{
@@ -35,12 +36,18 @@ header .input {
     margin-right: 1rem;
 }
 #forgotpassword {
-    color: #e6e6e6;
+    color: #9cb4c1;
     
 }
 header .login-button {
     margin-top: auto;
     margin-bottom: auto;
+}
+header .login-button button {
+    background-color: #4267b2;
+    color: white;
+    border-style: ridge;
+    border-color: #29487d; 
 }
 .main-body{
     display: flex;
@@ -48,7 +55,8 @@ header .login-button {
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #e6e6e6;
+    padding-bottom: 5rem;
+    background-color: #edf0f4;
 }
 .main-body .left-half{
     flex: 1;
@@ -62,13 +70,12 @@ header .login-button {
     font-size: 28px;
     line-height: 36px
 }
-.main-body .left-half .small-slogan {
-}
 .main-body .left-half .small-slogan p {
     font-size: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #666674;
 }
 .main-body .left-half .small-slogan p img {
     margin-right: 0.5rem;
@@ -77,6 +84,7 @@ header .login-button {
 }
 .main-body .left-half .small-slogan p strong {
     margin-right: 0.5rem;
+    color: black;
 }
 .main-body .right-half .account-information{
     display: flex;
@@ -84,36 +92,97 @@ header .login-button {
     flex: 1 100%;
     align-items: stretch;
 }
+.main-body .right-half .signup-title h2{
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+.main-body .right-half .signup-title p{
+    margin-top: 0;
+    padding-top: 0;
+}
+.main-body .right-half .account-information ::placeholder {
+    padding: 0.5em;
+    font-size: 1.6em;
+    color: #999999;
+}
 .main-body .right-half .account-information .fullname{
     display: flex;
     flex-direction: row;
-    padding:0.1rem;
+    padding:0.3rem;
+    height: 2.5em;
+}
+.main-body .right-half .account-information .fullname #firstname {
+    margin-right: 0.3rem;
+}
+.main-body .right-half .account-information .fullname #lastname{
+    margin-left: 0.3rem;
 }
 .main-body .right-half .account-information .email-or-phone{
     display: flex;
     flex-direction: row;
-    padding:0.1rem;
+    padding:0.3rem;
+    height: 2.5em;
 }
 .main-body .right-half .account-information .password{
     display: flex;
     flex-direction: row;
-    padding:0.1rem;
+    padding:0.3rem;
+    height: 2.5em;
 }
 .main-body .right-half .account-information .full-width * {
     width: 100%;
 }
+.main-body .right-half .account-information input {
+    border-radius: 5px;
+    border: 1px solid #bcc7d7;
+}
+.main-body .right-half .birthday-title {
+    margin-bottom:0;
+}
 .main-body .right-half .birthday-input {
     display: flex;
     flex-direction: row;
-   
-
+    align-items: center;
 }
-.main-body .right-half .birthday-input input {
-    margin-top: auto;
-    margin-bottom: auto;
+.main-body .right-half .birthday-input select{
+    height: 2.5em;
+}
+.main-body .right-half .birthday-input select option {
+    font-size: 4em;
 }
 .main-body .right-half .birthday-input p {
-    padding-left: 1rem;
+    font-size: 0.7em;
+    padding-left: 1em;
+    color: #3457bb;
+}
+.main-body .right-half .agreement {
+    font-size: 0.7em;
+    color: #666674;
+}
+.main-body .right-half .agreement strong{
+    color: #3457bb;
+    font-weight: normal;
+
+}
+.main-body .right-half .signup-button button{
+    width: 15rem;
+    height: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #609d4c;
+    border-style: groove;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.main-body .right-half .create-page {
+    font-size: 0.7em;
+    color: #666674;
+    font-weight: bold;
+}
+.main-body .right-half .create-page strong{
+    color: #3457bb;
 }
 footer {
     background-color: white;
@@ -138,6 +207,8 @@ footer .upper-footer .language{
 
 }
 footer .upper-footer .language p{
+    font-size: 0.7em;
+    color: #3457bb;
     padding-right: 1rem;
 }
 footer .lower-footer{
@@ -146,6 +217,13 @@ footer .lower-footer{
     flex-wrap: wrap;
 }
 footer .lower-footer p{
-    padding-right: 1rem;
-    margin: 0.2rem;
+    font-size: 0.7em;
+    color: #3457bb;
+    padding-right: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+footer .copyright p{
+    font-size: 0.7em;
+    color: #666674;
 }
