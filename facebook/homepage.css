@@ -1,6 +1,6 @@
 body{
+    font-family: Verdana, Geneva, sans-serif;
     
-
 }
 header{
     display: flex;
@@ -11,14 +11,32 @@ header{
     padding-right: 10%;
 }
 header .header-form{
-    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+#facebook {
+    font-size: 2.5rem;
+    color: White;
+    margin-bottom: 0.7rem;
+    margin-top: 2rem;
 }
 #login {
     display: flex;
    flex-direction: row;
-   color: white;
-   
+   color: white;   
 
+}
+header .small-text{
+    font-size: 0.8rem;
+    margin-top:0.2rem;
+    margin-bottom: 0.2rem;
+}
+header .input {
+    margin-right: 1rem;
+}
+#forgotpassword {
+    color: #e6e6ff;
+    
 }
 header .login-button {
     margin-top: auto;
@@ -30,13 +48,30 @@ header .login-button {
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #E1EDFA;
+    background-color: #f0f5f5;
 }
 .main-body .left-half{
     flex: 1;
 }
 .main-body .right-half{
-    flex: 1;
+    flex: 0.7;
+}
+.main-body .left-half .big-slogan {
+    font-weight: normal;
+    padding: 42px 0 24px;
+    font-size: 28px;
+    line-height: 36px
+}
+.main-body .left-half .small-slogan {
+}
+.main-body .left-half .small-slogan p {
+    font-size: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-body .left-half .small-slogan p img {
+    margin: .5rem;
 }
 .main-body .right-half .account-information{
     display: flex;
@@ -107,4 +142,5 @@ footer .lower-footer{
 }
 footer .lower-footer p{
     padding-right: 1rem;
+    margin: 0.2rem;
 }
