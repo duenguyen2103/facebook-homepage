@@ -35,7 +35,7 @@ header .input {
     margin-right: 1rem;
 }
 #forgotpassword {
-    color: #e6e6ff;
+    color: #e6e6e6;
     
 }
 header .login-button {
@@ -48,7 +48,7 @@ header .login-button {
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #f0f5f5;
+    background-color: #e6e6e6;
 }
 .main-body .left-half{
     flex: 1;
@@ -71,7 +71,12 @@ header .login-button {
     align-items: center;
 }
 .main-body .left-half .small-slogan p img {
-    margin: .5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.main-body .left-half .small-slogan p strong {
+    margin-right: 0.5rem;
 }
 .main-body .right-half .account-information{
     display: flex;
