@@ -8,11 +8,6 @@ for(var j = 1900; j<=2019; j++){
     years.push(j);
 }
 
-var generateOptions = function(array){
-    for(var i = 0; i<=array.length; i++){
-        
-    }
-}
 
 var generateDays = function(){
     days.forEach(function(day){
@@ -20,6 +15,7 @@ var generateDays = function(){
         option.innerHTML += day;
         document.getElementById('calendar-days').appendChild(option);
     })
+    return;
 }
 
 var generateMonths = function(){
@@ -28,6 +24,7 @@ var generateMonths = function(){
         option.innerHTML += month;
         document.getElementById('calendar-months').appendChild(option);
     })
+    return;
 }
 
 var generateYears = function(){
@@ -35,8 +32,24 @@ var generateYears = function(){
         var option = document.createElement('option');
         option.innerHTML += year;
         document.getElementById('calendar-years').appendChild(option);
-        
+    
     })
+    return;
+}
+
+var alertInputInformation = function(){
+    var formValue = document.getElementById('signup-input');
+    console.log(formValue.elements);
+    var alertText = "";
+    for(var i = 0; i< formValue.length-1; i++){ 
+        if(formValue.elements[i].type == "radio"&&formValue.elements[i].checked == false){
+            continue;
+        }
+        var text =  formValue.elements[i].name + ": " + formValue.elements[i].value + '\n';
+        alertText += text;
+
+    };
+    alert(alertText);
 }
 
 

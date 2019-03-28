@@ -22,7 +22,7 @@
                     <p class="small-text"id="forgotpassword">Forgot Password?</p>
                 </div>
                 <div class="login-button input">
-                    <button>Log In</button>
+                    <button type="button">Log In</button>
                 </div>
             </form>
         </div>
@@ -41,32 +41,32 @@
                 </div>
             </div>
             <div class="right-half">
-                <form>
+                <form id="signup-input">
                     <div  class="signup-title">
                             <h2>Sign Up</h2>
                             <p>It's free and always will be</p>
                     </div>
                     <div class="account-information">
                             <div class="fullname full-width">
-                                    <input id="firstname" type="text" placeholder="First name">
-                                    <input id="lastname" type="text" placeholder="Last name">
+                                    <input id="firstname" type="text" name="firstname" placeholder="First name">
+                                    <input id="lastname" type="text" name="lastname" placeholder="Last name">
                             </div>
                             <div class="email-or-phone full-width">
-                                    <input type="text" placeholder="Email or Phone number">
+                                    <input type="text" name="email-or-phone" placeholder="Email or Phone number">
                             </div>
                             <div class="password full-width">
-                                    <input type="text" placeholder="New Password">
+                                    <input type="text" name="password" placeholder="New Password">
                             </div>
                     </div>
                     <div>
                         <div>
                             <p class="birthday-title">Birthday</p>
                             <div class="birthday-input">
-                                    <select id="calendar-months">
+                                    <select id="calendar-months" name="month">
                                     </select>
-                                    <select id="calendar-days">
+                                    <select id="calendar-days" name="day">
                                     </select>
-                                    <select id="calendar-years">
+                                    <select id="calendar-years" name="year">
                                     </select>
                                     <p>
                                         Why do I need to provide my <br> birthday?
@@ -76,15 +76,15 @@
 
                         </div>
                         <div>
-                            <input type=radio> Female
-                            <input type=radio> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="male"> Male
                         </div>
                     </div>
                     <p class="agreement">
                             By clicking Sign Up, you agree to our <strong>Terms</strong>, <strong>Data Policy</strong>  and <strong>Cookies Policy</strong>. You may receive SMS Notifications from us and can opt out any time.
                     </p>
                     <div class="signup-button">
-                        <button>Sign Up</button>
+                        <button type="submit" onclick="alertInputInformation()">Sign Up</button>
                     </div>
                     <hr>
                     <p class="create-page"><strong>Create A Page</strong> for celebrity, band or business.</p>
