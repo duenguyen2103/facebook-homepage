@@ -3,8 +3,9 @@
 <head>
     <title>Facebook - Log In or Sign Up</title>
     <link rel="stylesheet" href="homepage.css">
+    <script src="./homepage.js"></script>
 </head>
-<body>
+<body onload="generateMonths(), generateDays(), generateYears()">
     <header>
         <div>
             <h1 id="facebook">facebook</h1>
@@ -61,14 +62,11 @@
                         <div>
                             <p class="birthday-title">Birthday</p>
                             <div class="birthday-input">
-                                    <select>
-                                        <option>Month</option>
+                                    <select id="calendar-months">
                                     </select>
-                                    <select>
-                                        <option>Day</option>
+                                    <select id="calendar-days">
                                     </select>
-                                    <select>
-                                        <option>Year</option>
+                                    <select id="calendar-years">
                                     </select>
                                     <p>
                                         Why do I need to provide my <br> birthday?
